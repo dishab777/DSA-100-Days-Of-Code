@@ -2,7 +2,7 @@
 
 // Function to remove all occurrences of val in-place
 int removeElement(int* nums, int numsSize, int val) {
-    int k = 0; // k tracks the position for the next non-val element
+    int k = 0; // k tracks the position for the next non-val element 
 
     for (int i = 0; i < numsSize; i++) {
         if (nums[i] != val) {
