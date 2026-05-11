@@ -1,58 +1,47 @@
-# 🚀 DSA 100 Days of Code (C Language)
+# 100 Days of Code: Data Structures & Algorithms in C 🚀
 
-Welcome to my 100-day journey into the heart of **Data Structures and Algorithms** using the C language. This repository serves as a daily log of my progress, code implementations, and conceptual notes.
+Welcome to my 100 Days of Code journey! This repository documents my progress, containing highly optimized, pure C implementations of classic and advanced algorithmic problems. 
 
-## 📌 Project Goals
-* Master fundamental and advanced data structures.
-* Solve classic algorithmic problems to build logic.
-* Write clean, memory-efficient C code.
-* Stay consistent for 100 consecutive days.
+Throughout this journey, I focused heavily on understanding the underlying mechanics of algorithms—moving beyond standard library functions to implement custom heaps, prefix sums, binary indexed trees, and divide-and-conquer logic entirely from scratch.
 
----
+## 🧠 Core Paradigms Mastered
+
+### 1. Binary Search on Answer Space
+Mastered the technique of guessing an answer within a mathematical boundary and using a greedy check to narrow down the search space in $O(N \log M)$ time.
+* Capacity To Ship Packages Within D Days
+* Painter's Partition Problem
+* Split Array Largest Sum
+
+### 2. Sorting & Partitioning
+Moved beyond basic sorts to write foundational logic and clever, single-pass array manipulations.
+* **Standard Sorts:** Merge Sort, Quick Sort (Lomuto Partition), Insertion Sort.
+* **Linear Sorts $O(N)$:** Counting Sort, Bucket Sort.
+* **Advanced Partitioning:** Sort Colors (Dutch National Flag 3-Pointer technique), Kth Largest Element in an Array (Quickselect with 3-Way Partitioning to prevent $O(N^2)$ degradation).
+* **Math/Bucketing:** Maximum Gap (Utilizing the Pigeonhole Principle to achieve $O(N)$ time without fully sorting).
+* **Frequency Mapping:** Relative Sort Array.
+
+### 3. Divide & Conquer (Modified Merge Sort)
+Learned how to extract secondary information (like cross-array conditions and inversion counts) essentially for "free" while the array sorts itself.
+* Count Inversions
+* Reverse Pairs
+* Count of Smaller Numbers After Self (Solved using both Struct-tracking Merge Sort and Coordinate Compression with a Fenwick Tree / BIT)
+
+### 4. Line Sweep & Intervals
+Processing overlapping events by sorting start times, or iterating backwards to find overlapping bottlenecks.
+* Merge Intervals
+* Meeting Rooms II (Implemented using a custom from-scratch Min-Heap)
+* Car Fleet (Reverse-iteration bottleneck physics)
+
+### 5. Linked Lists
+Navigating memory without backwards iteration.
+* Insertion Sort List (Pointer manipulation using dummy nodes)
 
 ## 🛠️ Tech Stack
-* **Language:** C (C11/C17)
-* **Compiler:** GCC
-* **Debugger:** GDB / Valgrind (for memory leak detection)
-
----
-
-## 📅 The Roadmap
-
-### Phase 1: Foundations & Arrays (Days 1-20)
-* [ ] Pointers & Memory Management (`malloc`, `free`)
-* [ ] Time & Space Complexity (Big O)
-* [ ] Array Operations (Insertion, Deletion, Rotation)
-* [ ] Linear & Binary Search
-
-### Phase 2: Linked Lists & Stacks/Queues (Days 21-40)
-* [ ] Singly, Doubly, and Circular Linked Lists
-* [ ] Stack implementation using Arrays & Linked Lists
-* [ ] Queue, Circular Queue, and Deque
-* [ ] Applications: Infix to Postfix, Balanced Parentheses
-
-### Phase 3: Sorting & Recursion (Days 41-60)
-* [ ] Bubble, Selection, and Insertion Sort
-* [ ] Merge Sort & Quick Sort (Divide and Conquer)
-* [ ] Recursive logic (Tower of Hanoi, Fibonacci)
-
-### Phase 4: Trees & Graphs (Days 61-85)
-* [ ] Binary Trees & Binary Search Trees (BST)
-* [ ] Tree Traversals (In-order, Pre-order, Post-order)
-* [ ] AVL Trees (Basics)
-* [ ] Graph Representation (Adjacency Matrix/List)
-* [ ] BFS & DFS Algorithms
-
-### Phase 5: Hashing & Dynamic Programming (Days 86-100)
-* [ ] Hash Tables & Collision Resolution
-* [ ] Introduction to DP (Knapsack, Longest Common Subsequence)
-* [ ] Final Project/Review
-
----
+* **Language:** C
+* **Focus:** $O(1)$ Space Complexity optimizations, In-place modifications, Pointer arithmetic, Custom Data Structures (Min-Heaps, Fenwick Trees).
 
 ## 🚀 How to Run
-To compile and run any code file (e.g., `main.c`):
-
+All files are standard C source files with zero external dependencies. To compile and run any of them using GCC:
 ```bash
 gcc filename.c -o output
 ./output
